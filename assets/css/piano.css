@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white-color: #ffffff;
+}
+body {
+    font-family: 'Arima Madurai', cursive;
+    width: 100%;
+    background: url(https://media.giphy.com/media/1VWxO6OKqOpi3wwOKJ/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: 1500px 800px;
+      /* background-image: linear-gradient(
+          to right bottom, 
+          #118ab2, 
+          #0e92b9, 
+          #0b99c1, 
+          #07a1c8,
+          #03a9cf, 
+          #37b0d8,
+          #51b8e1, 
+          #66bfe9, 
+          #8cc7f2, 
+          #accff8,
+          #c7d8fc, 
+          #dee2ff
+    ); */
+    
+}
+.container {
+    max-width: 1100px;
+    height: 770px;
+     /* border: 3px solid #222427;  */
+    margin: auto;
+    margin-top: 1.8rem;
+    padding: 0 5rem;
+
+
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    color: var(--white-color);
+    margin: 3rem 0 1rem 0;
+}
+.heading {
+    font-size: 37px;
+    font-weight: 800;
+    line-height: 3rem;
+   
+
+}
+.heading1 {
+    font-size: 37px;
+    font-weight: 800;
+    line-height: 3rem;
+    padding-left: 3.1rem;
+    padding-bottom: 1rem;
+    margin-top: 4rem;
+
+}
+/* end common style */
+
+#home .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.collection {
+    width: 50%;
+    flex: 1;
+    margin-top: 1.5rem;
+}
+.lead {
+    max-width: 600px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 1.2rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+  text-align: center;
+}
+.musicbox {
+    margin-top: -20px;
+    line-height: 1rem;
+    padding: 0;
+    
+}
+.musicbox ul li h3{
+    color: #15253a;
+    font-weight: 400;
+}
+/* .hor {
+    margin: 1rem 0 1rem 0;
+    max-width: 500px;
+    background-color: #c7d8fc;
+} */
+.playbox {
+    flex: 1;
+    height: 720px;
+    margin: 0.5rem auto;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fcc7d98c;
+}
+nav {
+    display: block;
+    margin: 3rem auto;
+    margin-bottom: 0rem;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 1rem;
+    padding: 1rem;
+  
+}
+ul li a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: var(--white-color);
+    transition: all 300ms;
+}
+ul li a:hover {
+    background-color: #fcc7d98c;
+}
+
+.link {
+     /* border: 3px solid black;  */
+    list-style: none;
+    display: flex;
+    margin-left: -60px;
+    padding-left: 0;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.link a {
+    text-decoration: none;
+    padding: 4px 23px;
+    border-radius: 5px;
+    color: var(--white-color);
+    transition: all 300ms;
+    background-color: #fcc7d98c;
+}
+.link a:hover {
+    font-weight: 900;
+    padding: 6px 27px;
+}
+
+.controller {
+    margin: 2.5rem auto;
+    width: 100%;
+    max-width: 400px;
+    min-height: 500px;
+}
+.circle {
+    width: 250px;
+    height: 250px;
+    background-color: #222427;
+    border-radius: 50%;
+    margin: 2rem auto;
+    display: flex;
+    border: 3px solid #ee53ba;
+    border-top: 3px solid #ec026f;
+   
+}
+.circle2 {
+    width: 180px;
+    height: 180px;
+    background-color: #252629;
+    border-radius: 50%;
+    border: 3px solid #282529;
+    border-top: 3px solid #ff4bba;
+    align-self: center;
+    display: flex;
+    margin: auto;
+    
+}
+.circle2 .fluid-img{
+    width: 100%;
+    max-width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    align-self: center;
+    margin: auto;
+}
+#song-name{
+    color: #15253a;
+    font-weight: 500;
+}
+.circle.animate {
+    animation: anticlock 6s infinite linear;
+}
+.circle2.animate {
+    animation: clockwise 6s infinite linear;
+}
+.media-btn {
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+    margin: 1rem;
+}
+@keyframes anticlock {
+    from {
+        transform: rotate(360deg);
+    } to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes clockwise {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 900px) {
+    #home .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    .collection {
+        width: 90%;
+        flex: 1;
+        margin: 1.5rem auto;
+    }
+    .playbox {
+        flex: 1;
+        width: 90%;
+    }
+}
+.card-body {
+    width: 100%;
+    max-width: 550px;
+    min-height: 100vh;
+    background-color: #c7d8fc8c;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+.card-body nav{
+    margin: 0;
+    padding-top: 2rem;
+    text-align: center;
+}
+.card-body .about{
+    padding: 1rem;
+}
+.about .center {
+    text-align: center;
+}
