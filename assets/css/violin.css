@@ -230,11 +230,12 @@ ul li a:hover {
         background-size: 600px 1800px;
     }
     .container {
-        max-width: 1100px;
+        max-width: 1400px;
         height: 1500px;
     }
     .heading1 {
         padding-left: 0rem;
+        text-align: center;
     }
 
     .lead {
