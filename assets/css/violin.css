@@ -227,7 +227,7 @@ ul li a:hover {
 }
 @media (max-width: 900px) {
     body {
-        background-size: 400px 1800px;
+        background-size: 500px 1800px;
     }
     .container {
         width: 500px;
