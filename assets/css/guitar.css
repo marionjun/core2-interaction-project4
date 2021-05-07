@@ -226,6 +226,25 @@ ul li a:hover {
     }
 }
 @media (max-width: 900px) {
+    body {
+        background-size: 600px 1800px;
+    }
+    .container {
+        max-width: 1100px;
+        height: 1500px;
+    }
+    .heading1 {
+        padding-left: 0rem;
+    }
+
+    .lead {
+        padding-right: 0rem;
+    }
+    .link {
+       margin-left: 0px;
+       
+   }
+
     #home .container {
         display: flex;
         justify-content: space-between;
@@ -242,22 +261,4 @@ ul li a:hover {
         width: 90%;
     }
 }
-.card-body {
-    width: 100%;
-    max-width: 550px;
-    min-height: 100vh;
-    background-color: #c7d8fc8c;
-    margin: 1rem auto;
-    border-radius: 8px;
-}
-.card-body nav{
-    margin: 0;
-    padding-top: 2rem;
-    text-align: center;
-}
-.card-body .about{
-    padding: 1rem;
-}
-.about .center {
-    text-align: center;
-}
+
